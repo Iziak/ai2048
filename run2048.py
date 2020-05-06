@@ -77,7 +77,11 @@ def addNumber(board):
     if len(zeroList) == 0:
         return False
     twoLocation = random.randint(0,len(zeroList)-1)
-    newBoard[twoLocation] = random.randint(1,2)**2
+    rInt = random.randint(1,4)
+    if rInt == 4:
+        newBoard[twoLocation] = 4
+    else:
+        newBoard[twoLocation] = 2
     return newBoard
 
 def moveSection(section):

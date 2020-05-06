@@ -44,7 +44,7 @@ def test_addNumber_adds_new_2_or_4():
     board = addNumber(numpy.array([2,0,0,0,0,2,0,0,0,0,2,0,0,0,0,2]))
     nonZeroCount = 0
     for n in board:
-        if n !=0:
+        if n !=0 and (n == 4 or n == 2):
             nonZeroCount += 1
     assert nonZeroCount == 5
 
