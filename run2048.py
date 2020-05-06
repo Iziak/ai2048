@@ -12,8 +12,9 @@ class Game:
 
 def createBoard():
     board = numpy.array([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,])
-    random2 = random.randint(0,15)
-    board[random2] = 2
+    random2s = random.sample(range(len(board)), 2)
+    for a2 in random2s:
+        board[a2] = 2
     print("The board was created:")
     return board
 

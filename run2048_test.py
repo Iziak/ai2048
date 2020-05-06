@@ -10,7 +10,7 @@ def test_createBoard_has_2():
     for x in array:
         if x == 2:
             has2 += 1
-    assert has2
+    assert has2 == 2
 
 def test_moveSection_returns_array4():
     assert moveSection(numpy.array([0,0,0,0])).size == 4
